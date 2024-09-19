@@ -35,8 +35,13 @@ function registerAcc() {
                     body: "Thanks for letting us use your notifications! Let's hop into the dreamland.",
                     icon: "https://cdn-icons-png.flaticon.com/128/2184/2184561.png"
                 });
-            }else if(Notification.permission === "false") {
+            }else if(Notification.permission === "denied") {
                 Notification.requestPermission()
+                (Notification.permission === "granted") {
+                    new Notification("Hello and welcome to cineBaobab!", {
+                        body: "Thanks for letting us use your notifications! Let's hop into the dreamland.",
+                        icon: "https://cdn-icons-png.flaticon.com/128/2184/2184561.png"
+                    });
             }
             
         }, 3000);
