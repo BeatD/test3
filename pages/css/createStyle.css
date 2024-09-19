@@ -1,0 +1,57 @@
+.container {
+    border: solid black;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(255, 62, 88);
+    padding: 20px;
+    animation: intro2 2s;
+}
+input {
+    border: solid black;
+    border-radius:10px;
+    border-width: 2px;
+    padding: 5px;
+    background-color: aliceblue;
+    text-align: center;
+}
+.button {
+    border: solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(145, 235, 12);
+    margin-left: 70px;
+    transition: all;
+    transition-duration: 200ms;
+    margin-right: 70px;
+}
+.button:hover {
+    padding: 25px;
+    opacity: 0.5;
+}
+@keyframes intro2 {
+    from {
+        transform: translateY(1000px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+.credit {animation: intro2 3s;}
+.showBtn {
+    border: solid black ;
+    border-radius: 10px;
+    border-width: 2px;
+    transition: all 200ms;
+}
+.showBtn:active {
+    opacity: 0.5;
+}
+.dialog{
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 70%;
+}

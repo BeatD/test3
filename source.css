@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SamsungSans';
+    src: url('./Fonts/SamsungSans-Regular.ttf') 
+}
+
+* {
+    font-family: 'SamsungSans', sans-serif; /* Fallback to sans-serif */
+    font-weight: bold;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./JS/createJS.js"></script>
+    <link rel="stylesheet" href="../Animations/firstpage.css">
+    <link rel="stylesheet" href="./css/createStyle.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/2184/2184561.png" type="image/x-icon">
+    <link rel="stylesheet" href="../source.css">
+    <script src="./JS/registerJS.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinéBaobab</title>
+</head>
+<body>
+    <p style="text-align: center;">
+        <img class="icon" style="margin-top: 100px;" src="https://cdn-icons-png.flaticon.com/128/2184/2184561.png" alt="">
+    </p>
+    <div class="container" style="display: flex;">
+         Name
+        <input type="text" placeholder="Example : Ahmed" id="nameInput">
+        <br>
+        Password
+        <input type="password" id="passwordInput" placeholder="mot de passe ">
+        <br><button class="showBtn" style="margin-left: 125px; margin-right: 125px;" onclick="showPass()"><img id="passimg" src="https://cdn-icons-png.flaticon.com/128/2767/2767146.png" style="height: 20px;" alt=""></button>
+        <br>
+        <button class="button" onclick="registerAcc()">
+            Sign-In
+        </button>
+        <br>
+        <br>
+        <p style="text-align: center; font-size: small;" >
+            Alors ? Je suis sure que les histoirs de servers, <br>
+            c'etait un mensonge ? :)
+        </p>
+    </div>
+    <p style="text-align: center;" class="credit">
+        Le site est toujours en developement, <br>
+        les servers pour le streaming de filmes ne sont pas <br>
+        actives a tous moments !  <br>
+        <br>
+        <br>
+        _-Ahmed Moumin-_
+    </p>
+    <dialog style="background-color: rgb(255, 62, 88);" class="dialog" id="dialog">
+        Your account has been succesfully registered ! <br><br>
+        Welcome To CineBaobab ! <br><br>
+        But we will ask you for the permission to seend you notification for several uses <br><br>
+        these being : Sending Update Patches / New movies / Series etc.. <br>
+        we hope you'de understand !
+    </dialog>
+</body>
+</html>
