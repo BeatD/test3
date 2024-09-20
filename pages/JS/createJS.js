@@ -31,14 +31,14 @@ function registerAcc() {
         document.getElementById("dialog").showModal();
 
         setTimeout(() => {
-            if (Notification.permission === "granted") {
+            if (Notification.perm === "granted") {
                 new Notification("Hello and welcome to cineBaobab!", {
                     body: "Thanks for letting us use your notifications! Let's hop into the dreamland.",
                     icon: "https://cdn-icons-png.flaticon.com/128/2184/2184561.png"
                 });
-            } else if (Notification.permission === "denied") {
+            } else if (Notification.perm === "denied") {
                 Notification.requestPermission().then(permission => {
-                    if (permission === "granted") {
+                    if (perm === "granted") {
                         new Notification("Hello and welcome to cineBaobab!", {
                             body: "Thanks for letting us use your notifications! Let's hop into the dreamland.",
                             icon: "https://cdn-icons-png.flaticon.com/128/2184/2184561.png"
