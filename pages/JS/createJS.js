@@ -30,7 +30,7 @@ function registerAcc() {
         localStorage.setItem("VALIDCB", "TRUE");
         document.getElementById("dialog").showModal();
 
-        setTimeout(() => {
+
             if (Notification.perm === "granted") {
                 new Notification("Hello and welcome to cineBaobab!", {
                     body: "Thanks for letting us use your notifications! Let's hop into the dreamland.",
@@ -46,7 +46,7 @@ function registerAcc() {
                     }
                 });
             }
-        }, 3000);
+      
     }
 }
 
